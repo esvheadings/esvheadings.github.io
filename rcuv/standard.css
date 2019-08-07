@@ -1,0 +1,9 @@
+.def table tr:first-child td:first-child + td {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.altdef table tr:first-child td:first-child + td {
+  width: 1%;
+  white-space: nowrap;
+}

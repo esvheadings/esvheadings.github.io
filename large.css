@@ -1,0 +1,16 @@
+#panel1 { max-width: 400px; }
+#bkBtn { display: none; }
+#settingsBtn1 { display: inline-block; }
+#settingsBtn2 { display: none; }
+#esv1 { display: none; }
+#esv2 { display: inline; }
+/*
+#bkBtn2 { display: none; }
+*/
+
+#panel2 { left: 400px; }
+#headingsBtn { display: none; }
+/*
+#displayDiv { display: none; }
+#iframeDiv { display: none; }
+*/

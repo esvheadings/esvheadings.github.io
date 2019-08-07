@@ -1,0 +1,9 @@
+#panel1 { width: 50%; }
+#bkBtn { display: none; }
+#settingsBtn1 { display: inline-block; }
+#settingsBtn2 { display: none; }
+#esv1 { display: none; }
+#esv2 { display: inline; }
+
+#panel2 { left: 50% }
+#headingsBtn { display: none; }

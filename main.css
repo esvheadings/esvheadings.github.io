@@ -1,0 +1,364 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MaterialIcons-Regular'), url('MaterialIcons-Regular.woff');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size is 24px */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: none;
+}
+#panel1 {
+  position: absolute; top: 0px; left: 0px;
+  height: 100%;
+  width: 100%;
+  min-width: 309px;
+  background-color: #FFFFFF;
+}
+#header1 {
+  position: absolute; top: 0px; left: 0px; right: 0px;
+  padding-right: 5px;
+  height: 40px;
+  background-color: #436B95;
+}
+#currHdrBk {
+  position: absolute; left: 15px; bottom: 4px;
+  color: #FFFFFF; background-color: #436B95;
+  font-size: 18px;
+}
+#header1 .m1 {
+  position: relative; top: 8px;
+  height: 18px;
+  float: right;
+}
+#fontSize {
+  display: none;
+  margin-right: 10px;
+  color: #FFFFFF;
+  padding: 2px 5px 0px 5px;
+  border: 2px solid #FFFFFF; border-radius: 5px;
+}
+#smaller {
+  border: 1px solid #2E4966; border-radius: 5px 0px 0px 5px;
+}
+#bigger {
+  margin-right: 10px;
+  border-top: 1px solid #2E4966;
+  border-right: 1px solid #2E4966;
+  border-bottom: 1px solid #2E4966;
+  border-radius: 0px 5px 5px 0px;
+}
+#header1 .fontOpt {
+  display: inline-block;
+  padding: 3px 4px 1px 4px;
+}
+.activeBtn { background-color: #90FFC0; }
+.inactiveBtn { background-color: #DDDDDD; }
+.btn1 {
+  text-align: center;
+  color: #000000; background-color: #90FFC0;
+  border: 1px solid #2E4966; border-radius: 5px;
+}
+#bkBtn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 3px 7px 1px 7px;
+}
+/*
+#bkBtn2 {
+  position: absolute; top: 7px; right: 12px;
+  width: 60px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  background-color: #CCCCCC;
+  border: 2px solid #FFFFFF; border-radius: 5px;
+  display: none;
+}
+*/
+#settingsBtn1 {
+  display: none;
+  margin-right: 10px;
+  padding: 3px 4px 1px 4px;
+}
+#headings {
+  position: absolute; top: 40px; left: 5px; right: 0px; bottom: 32px;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
+  border-right: 1px solid #CCCCCC;
+}
+#table1 {
+  /*
+  This element must not be positioned because jquery.position()
+  is used to determine the position of the book row.
+  A positioned element has a css position of relative, absolute, or fixed.
+  */
+  width: 99%;
+  border-collapse: collapse;
+  line-height: 1.3;
+}
+#table1 #br1, #table1 #Revelation {
+  background-color: #FFFFFF;
+}
+#table1 tr.br {
+  background-color: #8CC4FF;
+}
+#table1 td:first-child {
+  padding-left: 10px;
+  vertical-align: top;
+  width: 2.5em;
+}
+#table1 a:hover {
+  color: #DC143C;
+}
+#table1 a {
+  color: #000000;
+  text-decoration: none;
+}
+.selectedRow {
+  background-color: #C6E3FF;
+}
+#footer {
+  position: absolute; left: 0px; bottom: 0px;
+  height: 32px;
+  width: 100%;
+  color: #FFFFFF; background-color: #436B95;
+}
+#esv {
+  position: relative; top: 5px;
+  display: inline-block;
+  padding: 3px 10px 4px 15px;
+  border-right: 1px solid #FFFFFF;
+}
+#esv2 {
+  display: none;
+}
+#infoBtn {
+  position: relative; top: 5px;
+  display: inline-block;
+  padding: 3px 0px 4px 8px;
+}
+#settingsBtn2 {
+  position: relative; top: 5px;
+  display: inline-block;
+  float: right;
+  height: 15px;
+  margin-right: 15px;
+  padding: 2px 5px 3px 5px;
+}
+#footer .f1:hover {
+  text-decoration: underline;
+}
+#footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#panel2 {
+  position: absolute; top: 0px; left: 0px; right: 0px;
+  height: 100%;
+  min-width: 309px;
+  z-index: -1;
+  background-color: #FFFFFF;
+}
+#header2 {
+  position: absolute; top: 0px; left: 0px;
+  height: 40px;
+  width: 100%;
+  background-color: #436B95;
+}
+#footer2 { position: absolute; left: 0px; bottom: 0px;
+  width: 100%;
+  height: 32px;
+  background-color: #436B95;
+}
+#header2 .m2 {
+  position: relative; top: 8px;
+  height: 18px;
+}
+#menu2Sort {
+  float: left;
+  padding-top: 4px;
+  padding-left: 15px;
+  color: #FFFFFF;
+}
+#sortNorm {
+  border-radius: 5px 0px 0px 5px;
+  border-left: 2px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+#sortAZ {
+  left:-4px;
+  border-radius: 0px 5px 5px 0px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+}
+#menu2Sort span {
+  position: relative;
+  padding: 3px 5px 1px 5px;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.selectedOpt {
+  color: #000000; background-color: #C6E3FF;
+}
+/*
+#displayDiv {
+  border-left: 1px solid #FFFFFF;
+  text-align: left;
+  min-width: 220px;
+  padding-left: 15px;
+  display: none;
+}
+#displayBtn {
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+*/
+#headingsBtn {
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+  padding: 3px 7px 1px 7px;
+}
+#bkMenu {
+  position: absolute; top: 40px; left: 0px; right: 0px; bottom: 32px;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
+}
+#bkSortNormal {
+  position: absolute; left: 0px; right: 0px;
+  min-width: 284px;
+  max-width: 600px;
+  line-height: 1.3;
+}
+#bkSortAZ {
+  position: absolute; left: 0px; right: 0px;
+  min-width: 284px;
+  max-width: 500px;
+  line-height: 1.3;
+  display: none;
+}
+#bkMenu .bk1 {
+  height: 10px;
+  width: 50%;
+  padding-left: 5px;
+}
+#bkMenu .bk1a {
+  padding-left: 10px;
+  min-width: 110px;
+  float: left;
+}
+#bkMenu .bk1b {
+  padding-left: 10px; padding-right: 10px;
+  min-width: 110px;
+  float: left;
+}
+#bkMenu .bk2 {
+  position: absolute; top: 0px; left: 50%;
+  width: 50%;
+}
+#bkMenu .bk2a {
+  padding-left: 10px;
+  min-width: 110px;
+  float: left;
+}
+#bkMenu .bk2b {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 110px;
+  float: left;
+}
+#bkSortNormal .bkHeading {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+#bkMenu .bk1a div:hover,
+#bkMenu .bk1b div:hover,
+#bkMenu .bk2a div:hover,
+#bkMenu .bk2b div:hover {
+  color: #DC143C;
+}
+#iframeDiv {
+  position: fixed; top: 0px; bottom: 0px; left: 400px; right: 0px;
+  background-color: #FFFFFF;
+  display: none;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+#info1 {
+  position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px;
+  padding: 40px 20px 42px 20px;
+  color: #333333; background-color: #FFFFFF;
+  line-height: 1.3;
+  overflow-y: auto;
+  display: none;
+  z-index: 2;
+}
+#closeInfo {
+  margin: 20px auto 10px; /* top horizontal bottom */
+}
+.closeBtn {
+  width: 60px; /* Use this instead of padding to set width */
+  padding: 2px 0px; /* vertical horizontal */
+  text-align: center;
+  background-color: #DDDDDD;
+  border: 1px solid #AAAAAA; border-radius: 5px;
+}
+#settingsMenu {
+  position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px;
+  padding-top: 60px;
+  background-color: #FFFFFF;
+  display: none;
+}
+.header3 {
+  position: fixed; top: 0px; left: 0px; right: 0px;
+  height: 40px;
+  width: 100%;
+  background-color: #436B95;
+}
+#settingsForm {
+  width: 180px;
+  margin: auto;
+  line-height: 1.3;
+}
+#settingsForm input {
+  margin-right: 5px;
+}
+.footer3 {
+  position: fixed; left: 0px; bottom: 0px; right: 0px;
+  height: 32px;
+  width: 100%;
+  color: #FFFFFF; background-color: #436B95;
+}
